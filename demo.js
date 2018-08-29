@@ -151,7 +151,9 @@ $(function() {
                     $('#tpsreport').animate({bottom: '-100px'});
                 },
                 'take picture': function () {
-                  take_snapshots(1);
+                  setTimeout(function () {
+                      take_snapshots(1);
+                  }, 3000);
                 }
             };
 
